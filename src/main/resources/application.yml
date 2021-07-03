@@ -1,0 +1,12 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+
+comment:
+  avatar: /images/avatar.png

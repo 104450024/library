@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輸入測試</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 class="ui aligned center aligned grid green header item">
+    輸入資料
+</h2>
+<div class="m-container m-padded-tb-big">
+    <div class="ui container">
+    <form class="ui large form" method="post" action="#" th:object="${library_users}">
+
+    <div class="field">
+        <label for="title">First Name</label>
+        <input type="text" name="name" id="title">
+    </div>
+    <div class="field">
+        <label for="name">Last Name</label>
+        <input type="text" name="name" id="name" >
+    </div>
+
+        <div>
+            <button class="ui button" type="submit">Submit</button>
+        </div>
+</form>
+    </div>
+</div>
+
+
+<th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+</th:block>
+
+</body>
+</html>

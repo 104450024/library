@@ -1,0 +1,146 @@
+2021-06-05 16:46:20.856  INFO 8612 --- [main] com.irm.demo.BlogApplication             : Starting BlogApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 8612 (C:\Users\charlie\IdeaProjects\blog\target\classes started by charlie in C:\Users\charlie\IdeaProjects\blog)
+2021-06-05 16:46:20.861  INFO 8612 --- [main] com.irm.demo.BlogApplication             : The following profiles are active: dev
+2021-06-05 16:46:21.747  INFO 8612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 16:46:21.821  INFO 8612 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2021-06-05 16:46:22.240  INFO 8612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 16:46:22.246  INFO 8612 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 16:46:22.246  INFO 8612 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-05 16:46:22.329  INFO 8612 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:46:22.329  INFO 8612 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1440 ms
+2021-06-05 16:46:22.525  INFO 8612 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 16:46:22.565  INFO 8612 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-05 16:46:22.642  INFO 8612 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 16:46:22.701  INFO 8612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:46:22.941  INFO 8612 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:46:22.953  INFO 8612 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-05 16:46:23.476  INFO 8612 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 16:46:23.483  INFO 8612 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:46:24.126  WARN 8612 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 16:46:24.191  INFO 8612 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:46:24.263  INFO 8612 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 16:46:24.539  INFO 8612 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-06-05 16:46:24.644  INFO 8612 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-05 16:46:24.687  INFO 8612 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 16:46:24.699  INFO 8612 --- [main] com.irm.demo.BlogApplication             : Started BlogApplication in 4.17 seconds (JVM running for 4.724)
+2021-06-05 16:46:25.268  INFO 8612 --- [RMI TCP Connection(2)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:46:25.268  INFO 8612 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:46:25.269  INFO 8612 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-05 16:46:38.027  WARN 8612 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://DESKTOP-E9UPI94:8080/actuator, healthUrl=http://DESKTOP-E9UPI94:8080/actuator/health, serviceUrl=http://DESKTOP-E9UPI94:8080/) at spring-boot-admin ([http://localhost:9090/instances]): I/O error on POST request for "http://localhost:9090/instances": Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information. Further attempts are logged on DEBUG level
+2021-06-05 16:47:20.149  INFO 8612 --- [http-nio-8080-exec-4] com.irm.demo.aspect.LogAspect            : Request : {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.irm.demo.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-06-05 16:47:20.206  WARN 8612 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-05 16:47:20.215  WARN 8612 --- [http-nio-8080-exec-4] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-06-05 16:47:20.220  INFO 8612 --- [http-nio-8080-exec-4] com.irm.demo.aspect.LogAspect            : Result : index
+2021-06-05 16:47:20.565  INFO 8612 --- [http-nio-8080-exec-8] com.irm.demo.aspect.LogAspect            : Request : {url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.irm.demo.web.IndexController.newblogs', args=[{}]}
+2021-06-05 16:47:20.570  INFO 8612 --- [http-nio-8080-exec-8] com.irm.demo.aspect.LogAspect            : Result : _fragments :: newblogList
+2021-06-05 16:48:05.105  INFO 17128 --- [main] com.irm.demo.BlogApplication             : Starting BlogApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 17128 (C:\Users\charlie\IdeaProjects\blog\target\classes started by charlie in C:\Users\charlie\IdeaProjects\blog)
+2021-06-05 16:48:05.107  INFO 17128 --- [main] com.irm.demo.BlogApplication             : The following profiles are active: dev
+2021-06-05 16:48:05.707  INFO 17128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 16:48:05.766  INFO 17128 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2021-06-05 16:48:06.135  INFO 17128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 16:48:06.140  INFO 17128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 16:48:06.140  INFO 17128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-05 16:48:06.225  INFO 17128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:48:06.225  INFO 17128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1092 ms
+2021-06-05 16:48:06.395  INFO 17128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 16:48:06.424  INFO 17128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-05 16:48:06.481  INFO 17128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 16:48:06.530  INFO 17128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:48:06.696  INFO 17128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:48:06.708  INFO 17128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-05 16:48:07.159  INFO 17128 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 16:48:07.165  INFO 17128 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:48:07.798  WARN 17128 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 16:48:07.869  INFO 17128 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:48:07.933  INFO 17128 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 16:48:08.173  INFO 17128 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-06-05 16:48:08.269  INFO 17128 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-05 16:48:08.312  INFO 17128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 16:48:08.323  INFO 17128 --- [main] com.irm.demo.BlogApplication             : Started BlogApplication in 3.512 seconds (JVM running for 3.998)
+2021-06-05 16:48:08.688  INFO 17128 --- [RMI TCP Connection(2)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:48:08.688  INFO 17128 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:48:08.689  INFO 17128 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-05 16:48:21.516  WARN 17128 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://DESKTOP-E9UPI94:8080/actuator, healthUrl=http://DESKTOP-E9UPI94:8080/actuator/health, serviceUrl=http://DESKTOP-E9UPI94:8080/) at spring-boot-admin ([http://localhost:9090/instances]): I/O error on POST request for "http://localhost:9090/instances": Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information. Further attempts are logged on DEBUG level
+2021-06-05 16:50:35.826  INFO 15696 --- [main] com.irm.demo.BlogApplication             : Starting BlogApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 15696 (C:\Users\charlie\IdeaProjects\blog\target\classes started by charlie in C:\Users\charlie\IdeaProjects\blog)
+2021-06-05 16:50:35.828  INFO 15696 --- [main] com.irm.demo.BlogApplication             : The following profiles are active: dev
+2021-06-05 16:50:36.444  INFO 15696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 16:50:36.520  INFO 15696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 5 JPA repository interfaces.
+2021-06-05 16:50:36.987  INFO 15696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 16:50:36.996  INFO 15696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 16:50:36.997  INFO 15696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-05 16:50:37.085  INFO 15696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:50:37.085  INFO 15696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2021-06-05 16:50:37.265  INFO 15696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 16:50:37.295  INFO 15696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-05 16:50:37.351  INFO 15696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 16:50:37.399  INFO 15696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:50:37.560  INFO 15696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:50:37.571  INFO 15696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-05 16:50:38.001  INFO 15696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 16:50:38.007  INFO 15696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:50:38.605  WARN 15696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 16:50:38.667  INFO 15696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:50:38.735  INFO 15696 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 16:50:38.974  INFO 15696 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-06-05 16:50:39.069  INFO 15696 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-05 16:50:39.116  INFO 15696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 16:50:39.127  INFO 15696 --- [main] com.irm.demo.BlogApplication             : Started BlogApplication in 3.585 seconds (JVM running for 4.025)
+2021-06-05 16:50:39.295  INFO 15696 --- [RMI TCP Connection(3)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:50:39.295  INFO 15696 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:50:39.296  INFO 15696 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-05 16:50:52.331  WARN 15696 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://DESKTOP-E9UPI94:8080/actuator, healthUrl=http://DESKTOP-E9UPI94:8080/actuator/health, serviceUrl=http://DESKTOP-E9UPI94:8080/) at spring-boot-admin ([http://localhost:9090/instances]): I/O error on POST request for "http://localhost:9090/instances": Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information. Further attempts are logged on DEBUG level
+2021-06-05 16:55:29.558  INFO 18836 --- [main] com.irm.demo.BlogApplication             : Starting BlogApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 18836 (C:\Users\charlie\IdeaProjects\blog\target\classes started by charlie in C:\Users\charlie\IdeaProjects\blog)
+2021-06-05 16:55:29.560  INFO 18836 --- [main] com.irm.demo.BlogApplication             : The following profiles are active: dev
+2021-06-05 16:55:30.143  INFO 18836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 16:55:30.198  INFO 18836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2021-06-05 16:55:30.587  INFO 18836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 16:55:30.593  INFO 18836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 16:55:30.593  INFO 18836 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-05 16:55:30.668  INFO 18836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 16:55:30.668  INFO 18836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1085 ms
+2021-06-05 16:55:30.856  INFO 18836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 16:55:30.886  INFO 18836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-05 16:55:30.941  INFO 18836 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 16:55:30.990  INFO 18836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 16:55:31.153  INFO 18836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 16:55:31.164  INFO 18836 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-05 16:55:31.607  INFO 18836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 16:55:31.613  INFO 18836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 16:55:32.228  WARN 18836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 16:55:32.292  INFO 18836 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 16:55:32.358  INFO 18836 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 16:55:32.627  INFO 18836 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-06-05 16:55:32.729  INFO 18836 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-05 16:55:32.780  INFO 18836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 16:55:32.791  INFO 18836 --- [main] com.irm.demo.BlogApplication             : Started BlogApplication in 3.507 seconds (JVM running for 3.945)
+2021-06-05 16:55:33.026  INFO 18836 --- [RMI TCP Connection(1)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 16:55:33.026  INFO 18836 --- [RMI TCP Connection(1)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 16:55:33.027  INFO 18836 --- [RMI TCP Connection(1)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-06-05 16:55:46.007  WARN 18836 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://DESKTOP-E9UPI94:8080/actuator, healthUrl=http://DESKTOP-E9UPI94:8080/actuator/health, serviceUrl=http://DESKTOP-E9UPI94:8080/) at spring-boot-admin ([http://localhost:9090/instances]): I/O error on POST request for "http://localhost:9090/instances": Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information. Further attempts are logged on DEBUG level
+2021-06-05 18:07:57.854  INFO 15176 --- [main] com.irm.demo.BlogApplication             : Starting BlogApplication using Java 15.0.2 on DESKTOP-E9UPI94 with PID 15176 (C:\Users\charlie\IdeaProjects\blog\target\classes started by charlie in C:\Users\charlie\IdeaProjects\blog)
+2021-06-05 18:07:57.855  INFO 15176 --- [main] com.irm.demo.BlogApplication             : The following profiles are active: dev
+2021-06-05 18:07:58.458  INFO 15176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 18:07:58.517  INFO 15176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2021-06-05 18:07:58.901  INFO 15176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 18:07:58.906  INFO 15176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 18:07:58.906  INFO 15176 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-06-05 18:07:58.983  INFO 15176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 18:07:58.983  INFO 15176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1105 ms
+2021-06-05 18:07:59.168  INFO 15176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 18:07:59.199  INFO 15176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-06-05 18:07:59.253  INFO 15176 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 18:07:59.300  INFO 15176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 18:07:59.464  INFO 15176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 18:07:59.475  INFO 15176 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-06-05 18:07:59.917  INFO 15176 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 18:07:59.923  INFO 15176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 18:08:00.542  WARN 15176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 18:08:00.606  INFO 15176 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-05 18:08:00.677  INFO 15176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-06-05 18:08:00.923  INFO 15176 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2021-06-05 18:08:01.030  INFO 15176 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-05 18:08:01.073  INFO 15176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-05 18:08:01.085  INFO 15176 --- [main] com.irm.demo.BlogApplication             : Started BlogApplication in 3.514 seconds (JVM running for 3.957)
+2021-06-05 18:08:01.456  INFO 15176 --- [RMI TCP Connection(2)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-05 18:08:01.456  INFO 15176 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-05 18:08:01.456  INFO 15176 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-06-05 18:08:14.426  WARN 15176 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://DESKTOP-E9UPI94:8080/actuator, healthUrl=http://DESKTOP-E9UPI94:8080/actuator/health, serviceUrl=http://DESKTOP-E9UPI94:8080/) at spring-boot-admin ([http://localhost:9090/instances]): I/O error on POST request for "http://localhost:9090/instances": Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:9090 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: no further information. Further attempts are logged on DEBUG level

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輸入測試</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2 class="ui aligned center aligned grid green header item">
+    輸入資料
+</h2>
+<div class="m-container m-padded-tb-big">
+    <div class="ui container">
+        <form class="ui large form" method="post" action="#" th:object="${library_users}" th:action="@{/admin/register}" >
+
+            <div class="field">
+                <label for="name1">姓名</label>
+                <input type="text" name="username" id="name1">
+            </div>
+            <div class="field">
+                <label for="nickname">綽號</label>
+                <input type="text" name="nickname" id="nickname">
+            </div>
+            <div class="field">
+                <label for="password">密碼</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="field">
+                <label for="avatar">圖像</label>
+                <input type="text" name="avatar" id="avatar">
+            </div>
+            <div class="field">
+                <label for="email">信箱</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="ui error message"></div>
+
+            <div>
+                <button class="ui button" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+</th:block>
+<script>
+
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
+  /*  $('.ui.form').form({
+        fields : {
+            title : {
+                identifier: 'name',
+                rules: [{
+                    type : 'empty',
+                    prompt: '请输入标签名称'
+                }]
+            }
+        }
+    });*/
+
+</script>
+
+</body>
+</html>
